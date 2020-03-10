@@ -1,6 +1,6 @@
 import React from 'react'
 import './UserCard.css'
-// import GitHubCalendar from 'github-calendar'
+import GitHubCalendar from 'react-github-calendar'
 
 const UserCard = ({ user }) => {
 
@@ -19,7 +19,7 @@ const UserCard = ({ user }) => {
         <p>{user.blog}</p>
       </div>
       <div className={`calendar ${user.login}`}>
-        {/* {GitHubCalendar(`.${user.login}`, `${user.login}`, { responsive: true })} */}
+      <GitHubCalendar username={user.login} />
       </div>
     </div>
   )
