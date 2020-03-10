@@ -1,5 +1,6 @@
 import React from 'react'
 import './UserCard.css'
+import { GitHubCalendar } from 'github-calendar'
 
 const UserCard = ({ user }) => {
   return (
@@ -14,6 +15,9 @@ const UserCard = ({ user }) => {
         <p>Followers: {user.followers}</p>
         <p>Following: {user.following}</p>
         <p>{user.blog}</p>
+      </div>
+      <div className=".calendar">
+        {/* {GitHubCalendar(`.calendar`, user.login, { responsive: true })} */}
       </div>
     </div>
   )
