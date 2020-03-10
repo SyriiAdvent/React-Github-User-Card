@@ -41,7 +41,7 @@ class App extends React.Component {
         // console.log(ele)
         axios(`${ele.url}`)
         .then(response => {
-          console.log(response.data)
+          // console.log(response.data)
           this.setState({
             followersData: [...this.state.followersData, response.data]
           })
@@ -55,8 +55,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <UserCard user={this.state.user} />
-        {/* {console.log(this.state.userFollowers)} */}
-        {this.state.followersData.map((items) => <UserCard key={items.node_id} user={items} />)}
+        {this.state.followersData.map((items) => <UserCard key={items.id} user={items} />)}
       </div>
     );
   }
