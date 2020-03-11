@@ -1,0 +1,35 @@
+.cardContainer {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px -2px #000;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.cardContainer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.cardInfo h3 {
+  font-size: 1.5rem;
+  margin: 3px 0;
+}
+
+.cardInfo h4 {
+  font-size: 1.1rem;
+  margin: 3px 0 15px 0
+}
